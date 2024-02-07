@@ -1,0 +1,2576 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <title>Detaylar Sayfası</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="detaylar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+        onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="index.html" class="w3-bar-item w3-button button-menu" style="border-radius: 30px;"><i
+          class="fa fa-home"></i> HOME</a>
+      <a href="hakkında.html" class="w3-bar-item w3-button w3-hide-small button-menu" style="border-radius: 30px;"><i
+          class="fa fa-user"></i> ABOUT</a>
+      <div class="dropdown">
+        <button class="w3-bar-item w3-button w3-hide-small button-menu" style="border-radius: 30px;" type="button"
+          data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-th"></i>
+          FOR MORE
+        </button>
+        <div class="dropdown-content">
+          <a class="w3-bar-item w3-button" href="aksiyon.html"><i class="fa-solid fa-gun"></i>Action Games</a>
+          <a class="w3-bar-item w3-button" href="korku.html"><i class="fa-solid fa-ghost"></i>Fear Games</a>
+          <a class="w3-bar-item w3-button" href="macera.html"><i class="fa-solid fa-hat-cowboy"></i>Adventure
+            Games</a>
+          <a class="w3-bar-item w3-button" href="yarış.html"><i class="fa-solid fa-car"></i>Race Games</a>
+        </div>
+      </div>
+      <button onclick="document.getElementById('id01').style.display='inline-block'"
+        style="margin-top:auto; border-radius: 20px;"
+        class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">Login</button>
+      <button class="w3-bar-item w3-button w3-hide-small button-menu" style="margin-bottom:4px; border-radius: 30px;"
+        onclick="toggleDarkMode()"><i class="fa fa-adjust" style="margin-right:2px;"></i>CHANGE MODE</button>
+
+      <script>
+        var isDarkMode = false;
+
+        function toggleDarkMode() {
+          var element = document.body;
+          isDarkMode = !isDarkMode;
+
+          if (isDarkMode) {
+            element.style.backgroundColor = "#202121";
+            element.style.color = "white";
+
+          } else {
+            element.style.backgroundColor = "white";
+            element.style.color = "black";
+
+          }
+        }
+      </script>
+
+      <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      </script>
+
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="hakkında.html" class="w3-bar-item w3-button" style="border-radius: 30px;"
+        onclick="toggleFunction()">ABOUT</a>
+      <div class="dropdown">
+        <button class="w3-bar-item w3-button w3-hide-small button-menu" style="border-radius: 30px;" type="button"
+          data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-th"></i>
+          FOR MORE
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="aksiyon.html"><i class="fa-solid fa-gun"></i>Action Games</a></li>
+          <li><a class="dropdown-item" href="korku.html"><i class="fa-solid fa-ghost"></i>Fear Games</a></li>
+          <li><a class="dropdown-item" href="macera.html"><i class="fa-solid fa-hat-cowboy"></i>Adventure Games</a></li>
+          <li><a class="dropdown-item" href="yarış.html"><i class="fa-solid fa-car"></i>Race Games</a></li>
+        </ul>
+      </div>
+      <button class="w3-bar-item w3-button" style="margin-top: auto; border-radius: 30px;"
+        onclick="toggleDarkMode()">CHANGE MODE</button>
+      <script>
+        function toggleDarkMode() {
+          var element = document.body;
+          isDarkMode = !isDarkMode;
+
+          if (isDarkMode) {
+            element.style.backgroundColor = "#202121";
+            element.style.color = "white";
+          } else {
+            element.style.backgroundColor = "white";
+            element.style.color = "black";
+          }
+        }
+      </script>
+    </div>
+  </div>
+
+  <!-- The App Section -->
+  <div id="crysis" class="container" style="background-image: url('resim/crysis.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>CRYSIS</b></h1>
+        <p><span style="font-size:36px">İşte Crysis'in Hikayesi</span> İlk Crysis oyunu, 2020 yılında Kuzey Kore'ye
+          yapılan bir saldırı sonucunda yaşanan olayları konu alır. Bir grup Amerikan özel kuvvetleri askeri,
+          Kuzey Kore tarafından ele geçirilen bir adada gizli bir görev gerçekleştirir. Ancak, beklenmedik bir
+          şekilde bu adada gizemli bir uzay gemisi keşfederler. Daha sonra adada, bu uzay gemisinin varlığı ve
+          etkisi nedeniyle yaşam formlarının ortaya çıkmasıyla bir dizi olay meydana gelir. Oyun, oyuncuların olağanüstü
+          güçlere sahip
+          nanosuit teknolojisini kullanmalarına ve bu zorlu durumlarla başa çıkmalarına olanak tanır. Hikaye,
+          karakterlerin kişisel mücadeleleri, insanlığın kaderi ve uzaylı tehditlerle doludur. Crysis serisi, devam
+          oyunları ve genişleme paketleriyle hikaye çizgisini genişletti ve geliştirdi. Seri, oyun dünyasında yüksek
+          teknolojisi, etkileyici görselleri ve akıcı oynanışıyla tanınmaktadır.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <p>3.6 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Clarity Section -->
+  <div id="doom_ethernal" class="container" style="background-image: url('resim/doom\ ethernal.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>DOOM ETHERNAL</b></h1>
+        <p><span style="font-size:36px">İşte Doom Ethernal'ın Hikayesi</span>Doom Eternal'ın hikayesi, Doom (2016)
+          oyununun olaylarına devam eder. Oyuncular, Doom Slayer olarak bilinen kahramanı kontrol eder ve cehennem
+          ordularıyla savaşarak insanlığı kurtarmaya çalışır. Oyunda, Dünya, cehennem orduları tarafından işgal edilmiş
+          ve cehennemsel güçler tarafından istila edilmiştir.
+          Oyuncular, cehennem ordularının gezegeni ele geçirme ve insanlığı yok etme çabalarına karşı koymak için
+          çeşitli gezegenler ve boyutlar arasında seyahat eder. Doom Slayer, çeşitli silahlar ve yetenekler kullanarak
+          güçlü düşmanlarla savaşır ve cehennem ordularının liderleriyle karşı karşıya gelir. Oyuncular, hikaye
+          ilerledikçe Doom Slayer'ın geçmişi ve misyonu hakkında daha fazla bilgi edinirler.
+          Doom Eternal, aksiyon dolu oynanışı, hızlı tempolu hareket mekaniği ve çarpıcı görselleriyle dikkat çeker.
+          Oyun, oyunculara geniş bir silah ve yetenek yelpazesi sunar ve taktiksel stratejiler kullanarak zorlu
+          düşmanları alt etmelerini gerektirir. Doom Eternal, oynanışın yanı sıra çarpıcı bir atmosfer ve metal
+          müzikleriyle de ünlüdür.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.5 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The App Section -->
+  <div id="elden_ring" class="container"
+    style="background-image: url(resim/elden\ ring.jpg); background-attachment: fixed; background-repeat: no-repeat; background-size: cover;">
+    <div class="row">
+      <div class="column-66" style=" background-color: rgba(255, 255, 255, 0.5); width:100%;">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>ELDEN RİNG</b></h1>
+        <p><span style="font-size:36px">İşte Elden Ring'in Hikayesi</span>Oyunun hikayesi ve dünyası, fantastik bir
+          kurgu evreninde geçer. "Elden Ring", bozulmuş ve parçalanmış bir dünyada geçen bir epik macerayı anlatır.
+          Oyuncular, bir
+          Elden Ring olarak bilinen güçlü bir nesneyi yeniden bir araya getirmek için çeşitli krallıkları dolaşır ve
+          farklı bölgeleri keşfeder. Bu arayış sırasında oyuncular, çeşitli düşmanlarla karşılaşacak ve zorlu
+          mücadelelerle karşı karşıya kalacaktır.
+          Oyunun hikayesi ve dünyası, gizemli varlıklar, büyülü güçler ve çeşitli krallıkların çatışmalarıyla doludur.
+          Oyuncular, Elden Ring'i yeniden bir araya getirmek için çeşitli görevleri yerine getirecek ve bu esnada
+          dünyanın geçmişi ve sırları hakkında daha fazla bilgi edineceklerdir.
+          "Elden Ring", zorlu düşmanlar, karmaşık bir hikaye ve çarpıcı görselleriyle tanınır. Oyun, oyunculara geniş
+          bir dünya ve keşfedilecek derin bir evren sunar. Ayrıca, oyunun zorlu oynanışı ve derin karakter özelleştirme
+          özellikleriyle de dikkat çeker. "Elden Ring" oyunseverler arasında büyük bir beklenti ve heyecan yaratmış ve
+          hem Miyazaki'nin hem de Martin'in yaratıcılığının birleşimiyle merakla beklenen bir yapıt haline gelmiştir.
+        </p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.0 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Clarity Section -->
+  <div id="dead_space" class="container" style="background-image: url('resim/dead\ space.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>DEAD SPACE</b></h1>
+        <p><span style="font-size:36px">İşte Dead Space'in Hikayesi</span>Oyunun hikayesi, bir mühendis olan Isaac
+          Clarke'ın maceralarını takip eder. İlk oyunda, Isaac ve ekibi, uzay gemisi USG Ishimura'yı incelerken gizemli
+          bir sinyal alırlar. Gittikleri gemide, ölümcül bir uzaylı parazit türü olan Necromorphs'la karşılaşırlar. Bu
+          parazitler, insan vücutlarına saldırarak onları değiştirir ve canavarlara dönüştürür. Isaac, hem
+          bu korkunç yaratıklarla savaşırken hem de Ishimura gemisinde meydana gelen gizemli olayları çözmeye çalışır.
+          Seri, Isaac'in hayatta kalmak için çaresizce çabaladığı ve aynı zamanda kendi geçmişiyle yüzleştiği karmaşık
+          bir hikaye sunar. Oyunlar boyunca Isaac, tehlikeli Necromorphs'la savaşmak, kaynakları toplamak ve hayatta
+          kalmak için çeşitli mekanik aletler kullanır. Seri, atmosferi, oynanışı ve derinlemesine hikayesiyle öne
+          çıkar. "Dead Space", klostrofobik
+          atmosferi, gerilim dolu anları ve korkutucu düşmanlarıyla bilinen bir korku oyunu serisidir. Seri, bilim kurgu
+          korku türündeki oyunları sevenler için eşsiz bir deneyim sunmaktadır.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.1 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="calisto_protocol" class="container" style="background-image: url('resim/calisto.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>CALISTO PROTOCOL</b></h1>
+        <p><span style="font-size:36px">İşte Crysis'in Hikayesi</span> İlk Crysis oyunu, 2020 yılında Kuzey Kore'ye
+          yapılan bir saldırı sonucunda yaşanan olayları konu alır. Bir grup Amerikan özel kuvvetleri askeri,
+          Kuzey Kore tarafından ele geçirilen bir adada gizli bir görev gerçekleştirir. Ancak, beklenmedik bir
+          şekilde bu adada gizemli bir uzay gemisi keşfederler. Daha sonra adada, bu uzay gemisinin varlığı ve
+          etkisi nedeniyle yaşam formlarının ortaya çıkmasıyla bir dizi olay meydana gelir. Oyun, oyuncuların olağanüstü
+          güçlere sahip
+          nanosuit teknolojisini kullanmalarına ve bu zorlu durumlarla başa çıkmalarına olanak tanır. Hikaye,
+          karakterlerin kişisel mücadeleleri, insanlığın kaderi ve uzaylı tehditlerle doludur. Crysis serisi, devam
+          oyunları ve genişleme paketleriyle hikaye çizgisini genişletti ve geliştirdi. Seri, oyun dünyasında yüksek
+          teknolojisi, etkileyici görselleri ve akıcı oynanışıyla tanınmaktadır.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.2 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="ghost_of" class="container" style="background-image: url('resim/ghost\ of.png');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>GHOST OF TSUSHIMA</b></h1>
+        <p><span style="font-size:36px">İşte Crysis'in Hikayesi</span> İlk Crysis oyunu, 2020 yılında Kuzey Kore'ye
+          yapılan bir saldırı sonucunda yaşanan olayları konu alır. Bir grup Amerikan özel kuvvetleri askeri,
+          Kuzey Kore tarafından ele geçirilen bir adada gizli bir görev gerçekleştirir. Ancak, beklenmedik bir
+          şekilde bu adada gizemli bir uzay gemisi keşfederler. Daha sonra adada, bu uzay gemisinin varlığı ve
+          etkisi nedeniyle yaşam formlarının ortaya çıkmasıyla bir dizi olay meydana gelir. Oyun, oyuncuların olağanüstü
+          güçlere sahip
+          nanosuit teknolojisini kullanmalarına ve bu zorlu durumlarla başa çıkmalarına olanak tanır. Hikaye,
+          karakterlerin kişisel mücadeleleri, insanlığın kaderi ve uzaylı tehditlerle doludur. Crysis serisi, devam
+          oyunları ve genişleme paketleriyle hikaye çizgisini genişletti ve geliştirdi. Seri, oyun dünyasında yüksek
+          teknolojisi, etkileyici görselleri ve akıcı oynanışıyla tanınmaktadır.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.4 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="days_gone" class="container" style="background-image: url('resim/days\ gone.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>DAYS GONE</b></h1>
+        <p><span style="font-size:36px">İşte Crysis'in Hikayesi</span> İlk Crysis oyunu, 2020 yılında Kuzey Kore'ye
+          yapılan bir saldırı sonucunda yaşanan olayları konu alır. Bir grup Amerikan özel kuvvetleri askeri,
+          Kuzey Kore tarafından ele geçirilen bir adada gizli bir görev gerçekleştirir. Ancak, beklenmedik bir
+          şekilde bu adada gizemli bir uzay gemisi keşfederler. Daha sonra adada, bu uzay gemisinin varlığı ve
+          etkisi nedeniyle yaşam formlarının ortaya çıkmasıyla bir dizi olay meydana gelir. Oyun, oyuncuların olağanüstü
+          güçlere sahip
+          nanosuit teknolojisini kullanmalarına ve bu zorlu durumlarla başa çıkmalarına olanak tanır. Hikaye,
+          karakterlerin kişisel mücadeleleri, insanlığın kaderi ve uzaylı tehditlerle doludur. Crysis serisi, devam
+          oyunları ve genişleme paketleriyle hikaye çizgisini genişletti ve geliştirdi. Seri, oyun dünyasında yüksek
+          teknolojisi, etkileyici görselleri ve akıcı oynanışıyla tanınmaktadır.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <p>3.3 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="call_of_duty" class="container" style="background-image: url('resim/call\ of\ duty.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>CALL OF DUTY MW</b></h1>
+        <p><span style="font-size:36px">İşte Call Of Duty'nin Hikayesi</span> İlk Crysis oyunu, 2020 yılında Kuzey
+          Kore'ye
+          yapılan bir saldırı sonucunda yaşanan olayları konu alır. Bir grup Amerikan özel kuvvetleri askeri,
+          Kuzey Kore tarafından ele geçirilen bir adada gizli bir görev gerçekleştirir. Ancak, beklenmedik bir
+          şekilde bu adada gizemli bir uzay gemisi keşfederler. Daha sonra adada, bu uzay gemisinin varlığı ve
+          etkisi nedeniyle yaşam formlarının ortaya çıkmasıyla bir dizi olay meydana gelir. Oyun, oyuncuların olağanüstü
+          güçlere sahip
+          nanosuit teknolojisini kullanmalarına ve bu zorlu durumlarla başa çıkmalarına olanak tanır. Hikaye,
+          karakterlerin kişisel mücadeleleri, insanlığın kaderi ve uzaylı tehditlerle doludur. Crysis serisi, devam
+          oyunları ve genişleme paketleriyle hikaye çizgisini genişletti ve geliştirdi. Seri, oyun dünyasında yüksek
+          teknolojisi, etkileyici görselleri ve akıcı oynanışıyla tanınmaktadır.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.6 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="rdr2" class="container" style="background-image: url('resim/rdr2.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>RED DEAD REDEMPTİON 2</b></h1>
+        <p><span style="font-size:36px">İşte Crysis'in Hikayesi</span> İlk Crysis oyunu, 2020 yılında Kuzey Kore'ye
+          yapılan bir saldırı sonucunda yaşanan olayları konu alır. Bir grup Amerikan özel kuvvetleri askeri,
+          Kuzey Kore tarafından ele geçirilen bir adada gizli bir görev gerçekleştirir. Ancak, beklenmedik bir
+          şekilde bu adada gizemli bir uzay gemisi keşfederler. Daha sonra adada, bu uzay gemisinin varlığı ve
+          etkisi nedeniyle yaşam formlarının ortaya çıkmasıyla bir dizi olay meydana gelir. Oyun, oyuncuların olağanüstü
+          güçlere sahip
+          nanosuit teknolojisini kullanmalarına ve bu zorlu durumlarla başa çıkmalarına olanak tanır. Hikaye,
+          karakterlerin kişisel mücadeleleri, insanlığın kaderi ve uzaylı tehditlerle doludur. Crysis serisi, devam
+          oyunları ve genişleme paketleriyle hikaye çizgisini genişletti ve geliştirdi. Seri, oyun dünyasında yüksek
+          teknolojisi, etkileyici görselleri ve akıcı oynanışıyla tanınmaktadır.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <p>5.5 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="detroit" class="container" style="background-image: url('resim/detroit.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>DETROİT BECAME HUMAN</b></h1>
+        <p><span style="font-size:36px">İşte Crysis'in Hikayesi</span> İlk Crysis oyunu, 2020 yılında Kuzey Kore'ye
+          yapılan bir saldırı sonucunda yaşanan olayları konu alır. Bir grup Amerikan özel kuvvetleri askeri,
+          Kuzey Kore tarafından ele geçirilen bir adada gizli bir görev gerçekleştirir. Ancak, beklenmedik bir
+          şekilde bu adada gizemli bir uzay gemisi keşfederler. Daha sonra adada, bu uzay gemisinin varlığı ve
+          etkisi nedeniyle yaşam formlarının ortaya çıkmasıyla bir dizi olay meydana gelir. Oyun, oyuncuların olağanüstü
+          güçlere sahip
+          nanosuit teknolojisini kullanmalarına ve bu zorlu durumlarla başa çıkmalarına olanak tanır. Hikaye,
+          karakterlerin kişisel mücadeleleri, insanlığın kaderi ve uzaylı tehditlerle doludur. Crysis serisi, devam
+          oyunları ve genişleme paketleriyle hikaye çizgisini genişletti ve geliştirdi. Seri, oyun dünyasında yüksek
+          teknolojisi, etkileyici görselleri ve akıcı oynanışıyla tanınmaktadır.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <p>3.8 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="ratchet" class="container" style="background-image: url('resim/ratchet.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>RATCHET AND CLANK</b></h1>
+        <p><span style="font-size:36px">İşte Crysis'in Hikayesi</span> İlk Crysis oyunu, 2020 yılında Kuzey Kore'ye
+          yapılan bir saldırı sonucunda yaşanan olayları konu alır. Bir grup Amerikan özel kuvvetleri askeri,
+          Kuzey Kore tarafından ele geçirilen bir adada gizli bir görev gerçekleştirir. Ancak, beklenmedik bir
+          şekilde bu adada gizemli bir uzay gemisi keşfederler. Daha sonra adada, bu uzay gemisinin varlığı ve
+          etkisi nedeniyle yaşam formlarının ortaya çıkmasıyla bir dizi olay meydana gelir. Oyun, oyuncuların olağanüstü
+          güçlere sahip
+          nanosuit teknolojisini kullanmalarına ve bu zorlu durumlarla başa çıkmalarına olanak tanır. Hikaye,
+          karakterlerin kişisel mücadeleleri, insanlığın kaderi ve uzaylı tehditlerle doludur. Crysis serisi, devam
+          oyunları ve genişleme paketleriyle hikaye çizgisini genişletti ve geliştirdi. Seri, oyun dünyasında yüksek
+          teknolojisi, etkileyici görselleri ve akıcı oynanışıyla tanınmaktadır.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.3 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="persona" class="container"
+    style="background-image: url('resim/persona-5-persona-series-phantom-thieves-wallpaper-preview.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>PERSONA 5</b></h1>
+        <p><span style="font-size:36px">İşte Crysis'in Hikayesi</span> İlk Crysis oyunu, 2020 yılında Kuzey Kore'ye
+          yapılan bir saldırı sonucunda yaşanan olayları konu alır. Bir grup Amerikan özel kuvvetleri askeri,
+          Kuzey Kore tarafından ele geçirilen bir adada gizli bir görev gerçekleştirir. Ancak, beklenmedik bir
+          şekilde bu adada gizemli bir uzay gemisi keşfederler. Daha sonra adada, bu uzay gemisinin varlığı ve
+          etkisi nedeniyle yaşam formlarının ortaya çıkmasıyla bir dizi olay meydana gelir. Oyun, oyuncuların olağanüstü
+          güçlere sahip
+          nanosuit teknolojisini kullanmalarına ve bu zorlu durumlarla başa çıkmalarına olanak tanır. Hikaye,
+          karakterlerin kişisel mücadeleleri, insanlığın kaderi ve uzaylı tehditlerle doludur. Crysis serisi, devam
+          oyunları ve genişleme paketleriyle hikaye çizgisini genişletti ve geliştirdi. Seri, oyun dünyasında yüksek
+          teknolojisi, etkileyici görselleri ve akıcı oynanışıyla tanınmaktadır.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.7 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="witcher" class="container" style="background-image: url('resim/witcher.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>WİTCHER 3 WİLD HUNT</b></h1>
+        <p><span style="font-size:36px">İşte Witcher 3'ün Hikayesi</span>Oyunun hikayesi, Witcher olarak bilinen bir
+          canavar avcısı olan Geralt of Rivia'nın etrafında döner. Geralt, kayıp bir sevgilisi olan Yennefer'ı bulmak ve
+          tehlikeli bir grup avcı olan Wild Hunt'ı durdurmak için tehlikeli bir yolculuğa çıkar.
+          Oyuncular, Geralt'ın birbirinden farklı görevleri tamamlamasına ve geniş dünyada çeşitli karakterlerle
+          etkileşime girmesine olanak tanıyan geniş bir hikaye ve yan görevler ağıyla karşılaşırlar.
+          Oyunun hikayesi, politik entrikalar, büyülü yaratıklar, savaşlar ve çeşitli taraflar arasındaki çatışmaları
+          içeren zengin bir dünyada geçer. Oyuncular, çeşitli kararlar alarak hikayenin gidişatını etkileyebilir ve
+          farklı sonuçlar elde edebilir.
+          Karakterler arasındaki ilişkiler, dünya üzerindeki etkileşimler ve hikaye ilerledikçe alınan kararlar, oyunun
+          derinliğini ve etkileyiciliğini artırır.
+          "The Witcher 3: Wild Hunt", açık dünya yapısı, etkileyici hikayesi, zengin yan görevleri ve derin karakter
+          gelişimiyle övgü toplamış ve oyun dünyasında geniş bir hayran kitlesi kazanmıştır. Oyun, büyülü bir dünyada
+          epik bir macera deneyimi sunar.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <p>5.0 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="dogs" class="container" style="background-image: url('resim/watch\ dogs.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>WATCH DOGS</b></h1>
+        <p><span style="font-size:36px">İşte Watch Dogs'un Hikayesi</span>Oyunun hikayesi, bir bilgisayar korsanı olan
+          Aiden Pearce'in etrafında döner. Aiden, Chicago'nun merkezinde, hükümetin ve büyük şirketlerin kontrolündeki
+          gelişmiş bir bilgi toplumunda yaşamaktadır. Ancak, bir olay sonucunda sevdikleri tehlikeye
+          girdiğinde, Aiden intikam almak ve adalet sağlamak için kendi kişisel savaşını başlatır. Oyuncular, Aiden'ın
+          yeteneklerini kullanarak şehirdeki çeşitli sistemlere sızar, insanları izler ve çeşitli görevleri yerine
+          getirir.
+          "Watch Dogs" oyununda oyuncular, bir bilgisayar korsanı olarak şehirdeki herhangi bir kişiyi, aracı veya
+          elektronik cihazı hack'leme yeteneğine sahiptir. Oyun, oyunculara şehrin sokaklarında dolaşma, görevleri
+          tamamlama, yan görevleri yerine
+          getirme ve çeşitli görevlerle etkileşimde bulunma imkanı sunar. Oyuncular, hikaye boyunca çeşitli
+          karakterlerle etkileşime girer ve şehirdeki suç örgütleri, hükümet ajanları ve diğer tehlikelerle mücadele
+          eder
+          "Watch Dogs" serisi, modern toplumun teknolojik yönlerini, gizlilik konularını ve kişisel özgürlükleri ele
+          alan temalarıyla dikkat çeker. Oyun, oyunculara gelişmiş hackleme yetenekleri, heyecan verici aksiyon ve
+          zengin bir açık dünya deneyimi sunar.
+          Seri, oyun dünyasında geniş bir hayran kitlesi tarafından ilgiyle takip edilmektedir.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <p>3.8 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="spiderman" class="container" style="background-image: url('resim/spiderman.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>MARVEL SPİDERMAN</b></h1>
+        <p><span style="font-size:36px">İşte Marvel spiderman'in Hikayesi</span>Spider-Man, oyun boyunca çeşitli suç
+          örgütleriyle, süper kötülerle ve diğer tehditlerle karşı karşıya gelir. Oyuncular, gelişmiş aksiyon
+          mekanikleri ve özelleştirilebilir yetenekler kullanarak Spider-Man'in saldırılarını ve hareketlerini
+          geliştirebilirler.
+          Oyunda ayrıca, Peter Parker'ın kişisel hayatına ve ilişkilerine de odaklanılır
+          Spider-Man, oyun boyunca çeşitli suç örgütleriyle, süper kötülerle ve diğer tehditlerle karşı karşıya gelir.
+          Oyuncular, gelişmiş aksiyon mekanikleri ve özelleştirilebilir yetenekler kullanarak Spider-Man'in
+          saldırılarını ve hareketlerini geliştirebilirler.
+          Oyunda ayrıca, Peter Parker'ın kişisel hayatına ve ilişkilerine de odaklanılır
+          Oyun, Spider-Man'in çeşitli kostümlerini, yeteneklerini ve ikonik özelliklerini içerir. Ayrıca, New York
+          City'nin çeşitli semtlerini keşfetme imkanı sunar. Oyunun geniş açık dünya yapısı, oyunculara serbest dolaşma
+          imkanı ve yan görevlerle dolu zengin bir deneyim sunar.
+          Marvel's Spider-Man, heyecan verici aksiyon sahneleri, etkileyici görselleri ve derinlemesine hikayesiyle oyun
+          dünyasında büyük bir başarı elde etmiştir. Oyun, Spider-Man hayranları ve genel oyunseverler tarafından
+          beğenilmiş ve takdir edilmiştir.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.3 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="second_son" class="container" style="background-image: url('resim/second\ son.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>İNFAMOUS SECOND SON</b></h1>
+        <p><span style="font-size:36px">İşte İnfeamus Second Son'ın Hikayesi</span>Oyunun hikayesi, Seattle,
+          Washington'da geçer. Delsin Rowe, graffiti sanatçısı bir gençtir ve oyunun başında bir olay sonucu süper
+          güçlere sahip olduğunu keşfeder. Oyun boyunca, Delsin, kendisine ve şehre yönelik tehditlere karşı mücadele
+          ederken
+          farklı güçler kazanır ve kullanır. Oyuncular, Delsin'in kararlarını etkileyerek kahraman veya anti-kahraman
+          olma yolunda ilerleyebilirler.
+          Oyunda, Delsin'in kardeşi Reggie ve diğer karakterler de önemli roller üstlenir. Delsin'in Seattle'da
+          güçlerini kullanarak çeşitli görevleri yerine getirmesi, çeşitli suçlularla ve düşman gruplarla savaşması ve
+          şehri kurtarmak için çaba göstermesi gerekmektedir.
+          Oyuncular, Delsin'in güçlerini geliştirerek ve çeşitli yetenekleri kullanarak oyun dünyasında ilerlerler.
+          inFAMOUS: Second Son, etkileyici grafikleri, akıcı oynanışı ve geniş açık dünya ortamıyla dikkat çeker. Oyun,
+          oyunculara geniş bir şehri keşfetme, görevleri tamamlama ve farklı güçleri deneyimleme imkanı sunar. Karakter
+          gelişimi ve hikaye ilerledikçe alınan kararlar, oyunun ilerleyen kısımlarını etkiler ve farklı sonuçlara yol
+          açabilir.
+          Oyun, inFAMOUS serisi hayranları ve aksiyon-macera oyunlarını sevenler için eğlenceli bir deneyim sunar.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.8 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="little-nig" class="container" style="background-image: url('resim/little.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>LİTTLE NİGHTMARES</b></h1>
+        <p><span style="font-size:36px">İşte Litlle Nightmares'ın Hikayesi</span>Oyunun hikayesi, Seattle, Washington'da
+          geçer. Delsin Rowe, graffiti sanatçısı bir gençtir ve oyunun başında bir olay sonucu süper güçlere sahip
+          olduğunu keşfeder. Oyun boyunca, Delsin, kendisine ve şehre yönelik tehditlere karşı mücadele ederken
+          farklı güçler kazanır ve kullanır. Oyuncular, Delsin'in kararlarını etkileyerek kahraman veya anti-kahraman
+          olma yolunda ilerleyebilirler.
+          Oyunda, Delsin'in kardeşi Reggie ve diğer karakterler de önemli roller üstlenir. Delsin'in Seattle'da
+          güçlerini kullanarak çeşitli görevleri yerine getirmesi, çeşitli suçlularla ve düşman gruplarla savaşması ve
+          şehri kurtarmak için çaba göstermesi gerekmektedir.
+          Oyuncular, Delsin'in güçlerini geliştirerek ve çeşitli yetenekleri kullanarak oyun dünyasında ilerlerler.
+          inFAMOUS: Second Son, etkileyici grafikleri, akıcı oynanışı ve geniş açık dünya ortamıyla dikkat çeker. Oyun,
+          oyunculara geniş bir şehri keşfetme, görevleri tamamlama ve farklı güçleri deneyimleme imkanı sunar. Karakter
+          gelişimi ve hikaye ilerledikçe alınan kararlar, oyunun ilerleyen kısımlarını etkiler ve farklı sonuçlara yol
+          açabilir.
+          Oyun, inFAMOUS serisi hayranları ve aksiyon-macera oyunlarını sevenler için eğlenceli bir deneyim sunar.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <p>5.3 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="alien_isolation" class="container" style="background-image: url('resim/alien.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>ALIEN:ISOLATİON</b></h1>
+        <p><span style="font-size:36px">İşte Alien:İsolation'ın Hikayesi</span>Oyuncular, Ellen Ripley'in kızı Amanda
+          Ripley'i kontrol ederler. Amanda, annesinin kayboluşunun ardından, Nostromo adlı ticari uzay gemisinin kayıp
+          kara kutusunun sinyalini takip eder. Bu sinyal, Weyland-Yutani şirketinin Sevastopol istasyonunda olduğunu
+          gösterir.
+          Amanda, istasyona ulaştığında, istasyonun terk edilmiş olduğunu ve üzerinde gizemli bir tehdidin dolaştığını
+          keşfeder. Bu tehdit, Xenomorph adı verilen ölümcül bir yaratıktır.
+          Oyuncular, Amanda'nın hayatta kalması için istasyonun içinde dolaşarak gizemleri çözmeli, tehlikelerden
+          kaçmalı ve Xenomorph'un tehlikelerine karşı mücadele etmelidir. Oyun, oyuncuların kaynakları ve çevrelerini
+          akıllıca kullanarak stratejik olarak hareket etmelerini gerektirir. Oyunda, Sevastopol istasyonunun gizemleri,
+          Weyland-Yutani'nin karanlık sırları ve Xenomorph'un doğası gibi çeşitli unsurlar keşfedilir.
+          Oyuncuların karşılaştığı zorluklar ve gerilim dolu atmosfer, oyunun hayatta kalma temasını ve Alien
+          evrenindeki korku unsurlarını başarıyla yansıtır. Alien: Isolation, Alien serisine olan sadık yaklaşımı ve
+          atmosferik gerilimiyle oyun eleştirmenlerinden ve oyunculardan olumlu eleştiriler almıştır.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <p>3.9 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="resident_evil" class="container" style="background-image: url('resim/resident\ evil.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>RESIDENT EVIL VILLAGE</b></h1>
+        <p><span style="font-size:36px">İşte Resident Evill Village'in Hikayesi</span>Oyunun hikayesi, Ethan Winters
+          adlı bir karakterin maceralarını konu alır. Ethan, önceki oyunda başından geçen olayların ardından eşi Mia ile
+          birlikte huzurlu bir hayat sürmeye çalışmaktadır. Ancak, gizemli bir şekilde ortaya çıkan Chris Redfield
+          tarafından kaçırılır ve Resident Evil Village adlı korkunç bir köye götürülür.
+          Köy, çeşitli korkunç yaratıkların ve tehlikelerin bulunduğu bir yerdir. Ethan, burada karşılaştığı yerel
+          halkın ve çeşitli varlıkların karanlık sırlarını çözmeye çalışır. Bu sırada, köyde yaşayan dört büyük lord ve
+          korkunç liderleri olan Lady Dimitrescu da dahil olmak üzere çeşitli düşmanlarla karşılaşır. Ethan, köydeki
+          gizemleri çözmek ve eşini kurtarmak için bir dizi bulmaca çözer ve çeşitli tehlikelerle mücadele eder.
+          Oyun, çarpıcı grafikleri, atmosferik ses tasarımı ve korku unsurlarıyla dikkat çeker. Resident Evil Village,
+          gerilim dolu atmosferi ve sürükleyici hikayesi ile eleştirmenlerden ve oyunculardan olumlu eleştiriler
+          almıştır. Oyun, Resident Evil serisinin hayranlarına ve genel korku oyunu hayranlarına keyifli ve unutulmaz
+          bir deneyim sunar.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.7 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="need_for" class="container" style="background-image: url('resim/need\ for\ speed.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>NEED FOR SPEED:HEAT</b></h1>
+        <p><span style="font-size:36px">İşte Need For Speed:Heat'in Hikayesi</span>Oyuncular, Palm City'nin sokak yarışı
+          sahnelerinde yarışırken gündüzleri yasal yarışlara katılır ve para kazanır. Gündüzleri kazanılan parayla
+          araçlarını ve parçalarını yükseltebilir, polisler tarafından yakalanma riskini azaltabilir ve araç
+          koleksiyonlarını genişletebilirler.
+          Ancak oyuncular, geceleri yasadışı sokak yarışlarına katılarak daha büyük ödüller kazanır. Bu yarışlar, Palm
+          City'nin acımasız polis gücü tarafından kovalanma riskiyle doludur. Oyuncular, polislerden kaçmak ve
+          rakiplerini alt etmek için yeteneklerini ve araçlarını en üst seviyeye çıkararak becerilerini göstermek
+          zorundadır.
+          Oyunun hikayesi, ana karakterin Palm City'nin yarış sahnelerinde yükselmesini ve en iyi yarışçı olma hedefini
+          konu alır. Oyun, oyuncuların yarış dünyasında yükselirken çeşitli karakterlerle etkileşimde bulunmalarına ve
+          kendi yarış stili ve markasını oluşturmalarına olanak tanır.
+          "Need for Speed Heat", geniş açık dünya haritası, özelleştirilebilir araçları ve hikaye odaklı oyun
+          mekaniğiyle beğeni toplamıştır. Yüksek hızlı yarışlar, kişiselleştirme seçenekleri ve polis kovalamacaları
+          gibi unsurlar, oyunun heyecan verici ve eğlenceli bir deneyim sunmasını sağlamıştır.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <p>5.0 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="wrc" class="container" style="background-image: url('resim/wrc.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>WRC 9</b></h1>
+        <p><span style="font-size:36px">İşte WRC 9'un Hikayesi</span>WRC 9, Kylotonn tarafından geliştirilen ve Nacon
+          tarafından yayınlanan bir ralli yarışı video oyunudur. WRC serisinin bir parçası olarak, oyuncuları FIA Dünya
+          Ralli Şampiyonası'nda gerçekleşen çeşitli yarışlara katılmaya teşvik eder. Oyun, resmi lisanslarla gerçekçi
+          ralli deneyimleri sunar ve oyuncuları dünyanın çeşitli bölgelerinde farklı zorluklarla dolu yarışlara
+          katılmaya davet eder.
+          Ancak, WRC serisi genellikle belirgin bir hikaye anlatımı sunmaz; bunun yerine oyunculara gerçek dünya ralli
+          şampiyonasının deneyimini sunmayı hedefler. Oyuncular, farklı arazi türlerinde, farklı hava koşullarında ve
+          çeşitli zorluklarda gerçekleşen yarışlara katılarak kendi ralli kariyerlerini oluşturabilirler.
+          WRC 9, resmi ralli arabaları, gerçekçi yarış mekanikleri ve gerçekçi bir deneyim sunan detaylı yarış pistleri
+          ile öne çıkar. Oyuncular, kendi araçlarını ve performanslarını geliştirebilir, farklı yarış modlarında
+          becerilerini test edebilir ve ralli dünyasının heyecan verici atmosferini yaşayabilirler.
+          WRC 9, gerçekçi oynanışı ve zengin içeriğiyle ralli oyunları hayranlarından olumlu eleştiriler almıştır. Oyun,
+          gerçek dünya ralli şampiyonasına olan sadık yaklaşımıyla ve yüksek kaliteli grafikleriyle dikkat çekmektedir.
+          Oyuncular, farklı yarışlar ve zorluklarla dolu heyecan verici bir ralli deneyimi yaşamak için WRC 9'un sunduğu
+          çeşitli içeriklerden yararlanabilirler.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star "></span>
+        <p>4.5 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="asetto" class="container" style="background-image: url('resim/asetto.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>ASETTO CORSA</b></h1>
+        <p><span style="font-size:36px">İşte Asetto Corsa'nın Hikayesi</span>
+          Assetto Corsa, Kunos Simulazioni tarafından geliştirilen ve 2014 yılında ilk olarak piyasaya sürülen bir yarış
+          simülasyon oyunudur. Oyun, gerçekçi sürüş dinamikleri, yüksek kaliteli grafikler ve bir dizi lisanslı araç
+          içerir. Assetto Corsa, oyunculara birçok farklı pistte ve araçta yarışma deneyimi sunar.
+          Oyunun başarıları, gerçekçi fizik motoru, simülasyon odaklı sürüş deneyimi ve oyunculara geniş bir
+          modifikasyon yeteneği sunma konularında yoğunlaşmıştır. Assetto Corsa, yarış oyunları topluluğu arasında
+          popülerlik kazanmış ve simracing (simülasyon yarışı) topluluğunda bir standart haline gelmiştir.
+          Assetto Corsa'nın başarısı, yarış oyunları ve simülasyon tutkunları arasında geniş bir oyuncu kitlesine
+          ulaşmasını sağlamış ve oyunun geliştirici ekibini daha sonra Assetto Corsa Competizione gibi projelerde
+          çalışmaya yönlendirmiştir.
+          Ancak, belirttiğim gibi, Assetto Corsa'nın bir hikayesi yoktur, çünkü genellikle bir hikaye odaklı oyun değil,
+          daha çok simülasyon odaklı bir yarış oyunudur.</p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.5 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="dirt" class="container" style="background-image: url('resim/dirt.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>DIRT REALLY 2.0</b></h1>
+        <p><span style="font-size:36px">İşte DIRT Really 2.0'nin Hikayesi</span>
+          "Dirt Rally 2.0", Codemasters tarafından geliştirilen ve yayınlanan bir ralli yarışı simülasyon oyunudur.
+          Ancak, oyunda klasik bir hikaye örgüsü yerine, oyunculara belirli bir hikaye sunulmaz. "Dirt Rally 2.0",
+          gerçekçi bir ralli deneyimi sunmak için tasarlanmış bir simülasyon oyunudur ve daha çok yarış pistleri,
+          araçlar ve yarış etkinlikleri üzerine odaklanır.
+          Oyunun temel özellikleri arasında çeşitli ralli pistleri, farklı zeminlerde yarışma imkanı, lisanslı ralli
+          araçları ve gerçekçi sürüş dinamikleri yer almaktadır. Oyuncular, kariyer modunda kendi ralli pilotlarını
+          oluşturabilir, yarışlara katılabilir ve araçlarını geliştirebilirler.
+          "Dirt Rally 2.0", oyunculara birçok farklı ralli etkinliği sunar ve oyuncuların becerilerini ölçmelerine
+          olanak tanır. Ayrıca, oyunda hava koşulları ve araç ayarları gibi faktörlerin de gerçek bir ralli deneyimi
+          sunacak şekilde modellenmiştir.
+          Bu tür simülasyon oyunları genellikle yarışa odaklanarak, oyuncuların gerçek bir yarışçı gibi hissetmelerini
+          sağlamayı amaçlar ve genellikle kapsamlı bir hikayeye odaklanmaz. "Dirt Rally 2.0" da bu kapsamda
+          değerlendirilebilecek bir oyundur.
+        </p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.5 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="formula" class="container" style="background-image: url('resim/f1.png');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>F1 2022</b></h1>
+        <p><span style="font-size:36px">İşte F1 2022'nin Hikayesi</span>
+          "F1" serisi, Formula 1 dünya şampiyonasını temel alan bir yarış oyunu serisidir. Bu oyun serisi, genellikle
+          belirgin bir hikaye modu içermez. Bunun yerine, oyunculara gerçek Formula 1 takımları ve sürücülerle yarışma
+          fırsatı sunar.
+          "F1" oyunları, genellikle gerçekçi bir yarış simülasyonu deneyimi sunmayı amaçlar ve oyunculara Formula 1
+          dünya şampiyonasının bir parçası olma şansı verir. Oyuncular, kariyer modu veya tek yarış modu gibi farklı
+          oyun modlarında yarışabilir ve şampiyonluklar kazanabilirler.
+          Her yıl güncellenen oyunlar, gerçek takımların ve sürücülerin lisanslarını kullanarak gerçekçi bir yarış
+          atmosferi oluşturur. Ayrıca, oyuncuların araçları geliştirmeleri, strateji belirlemeleri ve yarış sırasında
+          gerçekçi hava koşulları ile başa çıkmaları gibi unsurları içerir.
+          Her ne kadar belirgin bir hikaye modu olmasa da, kariyer modu genellikle oyuncuların bir genç sürücü olarak
+          başlayıp kariyerlerini geliştirmelerine olanak tanır. Oyuncular, yarış kazandıkça takımlarla anlaşmalar
+          yapabilir, araçlarını geliştirebilir ve Formula 1 dünya şampiyonasında yükselebilirler.
+          F1 oyunları, genellikle yarışseverlere gerçek bir Formula 1 deneyimi sunmak ve oyuncuların favori takımları ve
+          sürücüleriyle yarışmalarını sağlamak için tasarlanmıştır.
+        </p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.5 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="forza" class="container" style="background-image: url('resim/forza.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>FORZA HORIZON</b></h1>
+        <p><span style="font-size:36px">İşte Doom Ethernal'ın Hikayesi</span>
+          "Forza Horizon" serisi, bir yarış simülasyonu olan "Forza Horizon 4" de dahil olmak üzere, genellikle gelişmiş
+          bir hikaye moduna sahip değildir. "Forza Horizon" oyunları, oyunculara açık dünya bir ortamda serbestçe
+          dolaşma ve yarışma imkanı sunar. Bu oyunlar genellikle yarışseverlere geniş bir araç yelpazesi, detaylı bir
+          sürüş dinamikleri sistemi ve çeşitli yarış etkinlikleri sunar.
+          Oyunun ana odak noktası genellikle yarışlardır ve oyuncular, farklı türlerdeki yarış etkinliklerine katılarak
+          ve farklı mevsimlerde farklı hava koşullarında yarışarak oyun dünyasını keşfederler.
+          Buna ek olarak, "Forza Horizon" serisi genellikle oyunculara kişiselleştirme seçenekleri sunar. Oyuncular
+          araçlarını özelleştirebilir, yarışları kazandıkça ödüller kazanabilir ve kendi yarış ekibini oluşturabilirler.
+          Her "Forza Horizon" oyunu, farklı bir açık dünya haritasına ve yarış etkinliklerine sahiptir. Örneğin, "Forza
+          Horizon 4", Büyük Britanya'nın farklı bölgelerini içeren geniş bir haritaya sahiptir ve mevsimlere göre
+          değişen dinamik bir hava sistemi sunar.
+          Sonuç olarak, "Forza Horizon" serisi genellikle oyunculara geniş bir yarış deneyimi sunar ancak bu deneyim
+          genellikle hikaye odaklı değildir. Oyuncular, kişisel hedeflere ulaşmak, ödüller kazanmak ve oyun dünyasını
+          keşfetmek amacıyla yarışırlar.
+        </p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.5 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="gran" class="container" style="background-image: url('resim/gran.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>GRAN TRİSMO 7</b></h1>
+        <p><span style="font-size:36px">İşte Doom Ethernal'ın Hikayesi</span>
+          "Gran Turismo" serisi, Polyphony Digital tarafından geliştirilen bir yarış simülasyonu oyun serisidir. Seri,
+          genellikle bir hikaye modu içermese de, oyunculara geniş bir yarış deneyimi sunar. "Gran Turismo" serisinin
+          ana odak noktası, gerçekçi sürüş dinamikleri ve geniş bir araç yelpazesine dayanmaktadır.
+          Her bir "Gran Turismo" oyunu, geniş bir araç yelpazesi, detaylı yarış pistleri ve gerçek dünya yerlerini temel
+          alan pistler içerir. Oyuncular, farklı yarış etkinliklerine katılarak kariyer modunda ilerler ve ödüller
+          kazanır. Ancak, genellikle bir hikaye modu, karakterler veya belirgin bir kurgusal öykü bulunmaz.
+          Oyuncular genellikle lisans sınavları geçer, farklı sınıflardaki araçlara sahip olabilir, yarışlar kazanır ve
+          kariyer modunda yükselirler. Oyun, sürüş becerilerini geliştirmeye odaklanır ve oyunculara gerçekçi bir yarış
+          deneyimi sunma amacını taşır.
+          "Gran Turismo" serisi genellikle yüksek kaliteli grafiklere, gerçekçi fizik motorlarına ve detaylı araç
+          modellemelerine odaklanır. Her bir oyun, yarış simülasyonları alanında kalitesiyle tanınan bir seri olarak
+          bilinir.
+          Sonuç olarak, "Gran Turismo" serisi genellikle hikaye odaklı değil, daha çok gerçekçi yarış simülasyonu
+          deneyimi sunmayı amaçlayan bir oyun serisidir.
+        </p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.5 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="mario" class="container" style="background-image: url('resim/mario.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>MARIO KART DELUXE</b></h1>
+        <p><span style="font-size:36px">İşte Doom Ethernal'ın Hikayesi</span>
+          "Mario Kart" serisi, popüler "Super Mario" oyunlarından türetilen ve aksiyon dolu bir kart yarışı oyunu olan
+          bir yarış oyun serisidir. "Mario Kart" oyunları, belirgin bir hikaye modu içermez, ancak genellikle
+          karakterler, seviyeler ve yarışlar arasında geçen temel bir bağlantıya sahiptir.
+          Genel olarak, "Mario Kart" oyunlarında, Mario ve diğer popüler "Super Mario" karakterleri, renkli ve eğlenceli
+          bir yarış dünyasında bir araya gelir. Oyuncular, kendilerine özgü güçlendirmelerle dolu yarış pistlerinde
+          birbirleriyle rekabet ederler. Oyunlar genellikle "Mario Kart Grand Prix" adlı bir turnuva modu içerir, bu
+          modda oyuncular farklı yarışlarda birbirleriyle yarışır ve puanlar kazanırlar.
+          Oyuncular aynı zamanda çeşitli öğeleri kullanarak rakiplerini engelleyebilir veya hızlarını artırabilirler.
+          Oyunlarda çeşitli seviyeler, yarış pistleri ve araçlar bulunur. Oyuncular genellikle kendi favori
+          karakterlerini ve araçlarını seçebilir, ayrıca oyun içi öğeleri toplayarak kendilerini güçlendirebilirler.
+          Her "Mario Kart" oyunu, kendi benzersiz özelliklere sahiptir ve genellikle popüler "Super Mario" evrenine ait
+          sevimli ve tanıdık karakterleri içerir. Oyunlar genellikle eğlence, rekabet ve çok oyunculu modlar üzerine
+          odaklanır.
+          Sonuç olarak, "Mario Kart" serisi genellikle hikaye odaklı bir oyun değildir, ancak eğlenceli, renkli ve
+          rekabetçi bir kart yarışı deneyimi sunmayı amaçlar.
+        </p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.5 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="wreckfest" class="container" style="background-image: url('resim/wreckfest.jpg');">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color:rgb(32, 117, 70);"><b>WRECKFEST</b></h1>
+        <p><span style="font-size:36px">İşte Doom Ethernal'ın Hikayesi</span>
+          "Wreckfest", Bugbear Entertainment tarafından geliştirilen ve THQ Nordic tarafından yayınlanan bir araba
+          yarışı oyunudur. Oyun, gerçekçi fizik motoru, zarar modellemesi ve çekişmeli yarışlarıyla tanınır. Ancak,
+          "Wreckfest" genellikle belirgin bir hikaye modu içermez. Bunun yerine, oyunculara çeşitli yarış etkinlikleri
+          ve serbest dolaşma modları sunar.
+          Oyunda genellikle kariyer modu bulunur. Bu mod, oyunculara farklı yarışlara katılarak ve araçlarını
+          geliştirerek ilerleme fırsatı tanır. Yarışlarda başarı elde ettikçe, oyuncular yeni araçlar satın alabilir,
+          araçlarını özelleştirebilir ve daha zorlu yarışlara katılabilirler.
+          Oyundaki temel odak noktalarından biri, çekişmeli yarışlardır. Zarar modellemesi oldukça detaylıdır ve
+          oyuncular araçlarını parçalayabilir, hasar alabilirler. Bu da oyunu daha gerçekçi ve heyecan verici kılar.
+          "Wreckfest" aynı zamanda çok oyunculu bir mod da içerir, böylece oyuncular dünya genelindeki diğer oyunculara
+          karşı yarışabilirler. Oyun, hem rekabetçi hem de eğlenceli bir oyun deneyimi sunmayı hedefler.
+          Sonuç olarak, "Wreckfest" genellikle hikaye odaklı bir oyun değildir. Bunun yerine, oyunculara çeşitli
+          yarışlar, serbest dolaşma modları ve detaylı araç özelleştirme seçenekleri sunan çekişmeli bir araba yarışı
+          deneyimi sunar.
+        </p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.5 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-button w3-light-grey button"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa-brands fa-facebook w3-hover-opacity"></i>
+      <i class="fa-brands fa-square-instagram w3-hover-opacity"></i>
+      <i class="fa-brands fa-square-snapchat w3-hover-opacity"></i>
+      <i class="fa-brands fa-square-pinterest w3-hover-opacity"></i>
+      <i class="fa-brands fa-square-twitter w3-hover-opacity"></i>
+      <i class="fa-brands fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Powered by <b>Darkness Gaming</b></p>
+  </footer>
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function () { myFunction() };
+    function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+</body>
+
+</html>
