@@ -195,23 +195,22 @@ var games = [
   },
 ];
 
-const gamesearchBox = document.getElementById("searchInput");
-const searchList = document.getElementById("gameList");
-document.addEventListener("DOMContentLoaded", function () {
-  // Sayfa yüklendiğinde gamelisti gizle
-  // Sayfa üzerinde bir yere tıklandığında gamelisti gizle
-  document.addEventListener("click", function (event) {
-    if (
-      !event.target.closest("#searchInput") &&
-      !event.target.closest("#gameList")
-    ) {
-    }
-  });
+const searchBox = document.getElementById("searchInput");
+const gameDetails = document.getElementById("gameDetails");
+const gameList = document.getElementById("gameList");
+
+document.addEventListener("click", function (event) {
+  if (
+    !event.target.closest("#searchInput") &&
+    !event.target.closest("#gameList")
+  ) {
+    gameList.classList.add("displayNone");
+    gameDetails.classList.add("displayNone");
+  }
 });
 
-// Arama ve Filtreleme Fonksiyonu
 function filterGames() {
-  var searchTerm = document.getElementById("searchInput").value.toLowerCase();
+  var searchTerm = searchBox.value.toLowerCase();
   var filteredGames = games.filter(function (game) {
     return game["Oyun Adı"].toLowerCase().includes(searchTerm);
   });
@@ -220,68 +219,31 @@ function filterGames() {
 }
 
 function displayGames(games) {
-  searchList.innerHtML = "";
-  for (let idx = 0; idx < games.length; idx++) {
-    let gameListItem = document.createElement("div");
-    gameListItem.dataset.id = games[idx]["Oyun Adı"];
-    gameListeItem.classList.add("gameList-item");
-    if (games[idx] == 0) {
-      gameListItem.innerHTML = `
-            <div class="">
-            `;
-    }
-  }
-}
-
-function displayGames(games) {
-  var gameListElement = document.getElementById("gameList");
-  gameListElement.innerHTML = "";
-
+  gameList.innerHTML = "";
   games.forEach(function (game) {
     var listItem = document.createElement("li");
     listItem.textContent = game["Oyun Adı"];
     listItem.addEventListener("click", function () {
-      showGameDetails(game); // Buradaki değişiklik
+      showGameDetails(game);
     });
-    gameListElement.appendChild(listItem);
+    gameList.appendChild(listItem);
   });
+
+  gameList.classList.toggle("displayNone", games.length === 0);
 }
 
 function showGameDetails(game) {
-  var gameDetailsElement = document.getElementById("gameDetails");
-  gameDetailsElement.innerHTML = "";
-
-  var details = document.createElement("div");
-  details.innerHTML = `
-        <h2>${game["Oyun Adı"]}</h2>
-        <p>Yıl: ${game["Yıl"]}</p>
-        <p>Platformlar: ${game["Platformlar"]}</p>
-        <p>Tür: ${game["Tür"]}</p>
-    `;
-
-  gameDetailsElement.appendChild(details);
+  gameDetails.innerHTML = `
+    <h2>${game["Oyun Adı"]}</h2>
+    <p>Yıl: ${game["Yıl"]}</p>
+    <p>Platformlar: ${game["Platformlar"]}</p>
+    <p>Tür: ${game["Tür"]}</p>
+  `;
+  gameDetails.classList.remove("displayNone");
 }
-document.getElementById("searchInput").addEventListener("input", filterGames);
-window.addEventListener("click", (event) => {
-  if (event.target.className != "form-control search") {
-    searchList.classList.add("hide-gameList");
-  }
-});
 
-const selectElement = document.getElementById("searchInput");
-
-selectElement.addEventListener("input", (event) => {
-  if (event.target.value.length > 0) {
-    document.getElementById("gameList").classList.remove("displayNone");
-  } else {
-    document.getElementById("gameList").classList.add("displayNone");
-  }
-});
-
-const gameElement = document.getElementById("gameList");
-
-gameElement.addEventListener("click", (event) => {
-  if (gameElement.click) {
-    document.getElementById("gameList").classList.add("displayNone");
-  }
+searchBox.addEventListener("input", filterGames);
+searchBox.addEventListener("click", function () {
+  gameList.classList.remove("displayNone");
+  gameDetails.classList.add("displayNone");
 });
