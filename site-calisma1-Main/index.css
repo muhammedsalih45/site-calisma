@@ -370,17 +370,21 @@ body {
 #gameList {
   display: block;
   position: absolute;
-  top: 80%;
-  left: -600px;
-  border-radius: 10px;
-  width: 500px;
+  top: 90%;
+  left: -275px;
+  border-radius: 20px;
+  width: 300px;
   background-color: #fff;
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   list-style: none;
-  overflow: scroll;
+  overflow-y: scroll;
   height: 400px;
   color: black !important;
+}
+
+#gameList::-webkit-scrollbar {
+  width: 2px;
 }
 
 #gameList li {
@@ -415,7 +419,7 @@ body {
 
 .search-container {
   margin-top: -45px;
-  margin-left: 1850px;
+  margin-left: 1810px;
 }
 
 .search {
