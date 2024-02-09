@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
 * {
   box-sizing: border-box;
   outline: none;
@@ -124,10 +126,6 @@ input[type="password"] {
   border: none;
   cursor: pointer;
   width: 100%;
-}
-
-button:hover {
-  opacity: 0.8;
 }
 
 /* Extra styles for the cancel button */
@@ -369,15 +367,6 @@ body {
   display: block;
 }
 
-.search {
-  width: 10px !important;
-  float: left;
-}
-
-.search-container {
-  display: contents;
-}
-
 #gameList {
   display: block;
   position: absolute;
@@ -421,3 +410,57 @@ body {
   font-size: 20px;
   /* display: none; */
 }
+
+/* Search Kısmı Başlangıç */
+
+.search-container {
+  margin-top: -45px;
+  margin-left: 1850px;
+}
+
+.search {
+  position: relative;
+  height: 50px;
+}
+
+.search .arama {
+  font-family: "Inconsolata", monospace;
+  background-color: #fff;
+  border: 0;
+  font-size: 16px;
+  padding: 15px;
+  height: 35px;
+  width: 50px;
+  transition: width 0.3s ease-in-out;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.buton {
+  background-color: #fff;
+  color: #e600ff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  height: 45px;
+  background: linear-gradient(rgb(255, 157, 157), rgb(255, 185, 54));
+  width: 50px;
+  border-radius: 20px;
+}
+
+.arama:focus,
+.buton:focus {
+  outline: none;
+}
+
+.search.active .arama {
+  width: 200px;
+  transition: 0.3s ease;
+}
+
+.search.active .arama {
+  transform: translateX(-198px);
+}
+/* Search Kısmı Bitiş */

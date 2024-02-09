@@ -247,3 +247,11 @@ searchBox.addEventListener("click", function () {
   gameList.classList.remove("displayNone");
   gameDetails.classList.add("displayNone");
 });
+
+const search = document.querySelector(".search");
+const input = document.querySelector(".arama");
+const btn = document.getElementById("buton");
+
+btn.addEventListener("click", () => {
+  search.classList.toggle("active");
+});

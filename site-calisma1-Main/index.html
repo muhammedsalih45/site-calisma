@@ -46,12 +46,24 @@
                 </div>
             </div>
 
-            <button onclick="document.getElementById('id01').style.display='inline-block'"
-                style="margin-top:auto; border-radius: 20px;"
-                class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">Login</button>
+
             <button class="w3-bar-item w3-button w3-hide-small button-menu"
                 style="margin-bottom:4px; border-radius: 30px;" onclick="toggleDarkMode()"><i class="fa fa-adjust"
                     style="margin-right:2px;"></i>CHANGE MODE</button>
+
+            <div class="search-container">
+                <div class="input-group mb-3" style="position:relative;  max-width: 250px; float: right; ">
+                    <div class="search">
+                        <input type="text" class="arama" id="searchInput" placeholder="Hızlı Arama...">
+                        <button class="buton" id="buton">
+                            <i class="fa-brands fa-searchengin"></i>
+                        </button>
+                    </div>
+                    <ul id="gameList" class="displayNone">
+
+                    </ul>
+                </div>
+            </div>
 
             <script>
                 var isDarkMode = false;
@@ -69,22 +81,6 @@
                     }
                 }
             </script>
-
-            <div class="search-container">
-                <div class="input-group mb-3"
-                    style="position: relative; max-width: 10px; float: right; top: 5px; right: 0 !important; ">
-                    <input type="text" class="form-control search" id="searchInput"
-                        style="margin-left:-600px; height: 36px; top: -7px; max-width:500px !important; border-radius: 20px; text-align: center;"
-                        placeholder="Search a Game" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <ul id="gameList" class="displayNone">
-                        <!-- Oyunlar burada listelenecek -->
-                    </ul>
-                </div>
-
-            </div>
-
-
-
 
             <!--  -->
             <div id="id01" class="modal">
