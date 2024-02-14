@@ -125,10 +125,6 @@ input[type="password"] {
   width: 100%;
 }
 
-button:hover {
-  opacity: 0.8;
-}
-
 /* Extra styles for the cancel button */
 .cancelbtn {
   width: auto;
@@ -471,3 +467,108 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+#gameList {
+  display: block;
+  position: absolute;
+  top: 90%;
+  left: -250px;
+  border-radius: 20px;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  overflow-y: scroll;
+  height: 400px;
+  color: black !important;
+  background: linear-gradient(rgb(237, 255, 155), rgb(207, 176, 255));
+}
+
+#gameList::-webkit-scrollbar {
+  width: 2px;
+}
+
+#gameList li {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+#gameList li:last-child {
+  border-bottom: none;
+}
+
+.displayNone {
+  display: none !important;
+}
+
+.gameDetails {
+  position: absolute;
+  font-family: "Inconsolata", monospace;
+  min-width: 500px;
+  max-width: 500px;
+  left: 34%;
+  top: 300px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 20px;
+  background: linear-gradient(rgb(255, 175, 175), rgb(255, 171, 255));
+}
+
+/* Search Kısmı Başlangıç */
+
+.search-container {
+  margin-top: -45px;
+  margin-left: 200px !important;
+  width: 100%;
+}
+
+.search {
+  height: 50px;
+  width: 100%;
+}
+
+.search .arama {
+  font-family: "Inconsolata", monospace;
+  background-color: #fff;
+  border: 0;
+  font-size: 16px;
+  padding: 15px;
+  height: 35px;
+  width: 50px;
+  transition: width 0.3s ease-in-out;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.buton {
+  background-color: #fff;
+  color: #e600ff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  height: 45px;
+  background: linear-gradient(rgb(255, 157, 157), rgb(255, 185, 54));
+  width: 50px;
+  border-radius: 20px;
+}
+
+.arama:focus,
+.buton:focus {
+  outline: none;
+}
+
+.search.active .arama {
+  width: 200px;
+  transition: 0.3s ease;
+}
+
+.search.active .arama {
+  transform: translateX(-198px);
+}
+/* Search Kısmı Bitiş */
