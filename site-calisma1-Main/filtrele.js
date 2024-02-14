@@ -198,6 +198,7 @@ var games = [
 const searchBox = document.getElementById("searchInput");
 const gameDetails = document.getElementById("gameDetails");
 const gameList = document.getElementById("gameList");
+const button = document.getElementById("buton");
 
 document.addEventListener("click", function (event) {
   if (
@@ -254,10 +255,10 @@ const btn = document.getElementById("buton");
 
 btn.addEventListener("click", () => {
   search.classList.toggle("active");
-});
 
-function handleKeyDown(event) {
-  if (event.key === "enter") {
-    gameDetails();
+  input.value = "";
+
+  if (search.classList.contains("active")) {
+    input.focus();
   }
-}
+});

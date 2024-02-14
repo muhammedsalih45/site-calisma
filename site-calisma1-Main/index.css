@@ -421,12 +421,13 @@ body {
 
 .search-container {
   margin-top: -45px;
-  margin-left: 1460px;
+  margin-left: 200px !important;
+  width: 100%;
 }
 
 .search {
-  position: relative;
   height: 50px;
+  width: 100%;
 }
 
 .search .arama {
