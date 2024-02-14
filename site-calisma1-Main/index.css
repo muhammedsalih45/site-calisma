@@ -371,7 +371,7 @@ body {
   display: block;
   position: absolute;
   top: 90%;
-  left: -275px;
+  left: -250px;
   border-radius: 20px;
   width: 300px;
   background-color: #fff;
@@ -421,7 +421,7 @@ body {
 
 .search-container {
   margin-top: -45px;
-  margin-left: 1810px;
+  margin-left: 1460px;
 }
 
 .search {

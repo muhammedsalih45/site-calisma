@@ -255,3 +255,9 @@ const btn = document.getElementById("buton");
 btn.addEventListener("click", () => {
   search.classList.toggle("active");
 });
+
+function handleKeyDown(event) {
+  if (event.key === "enter") {
+    gameDetails();
+  }
+}
