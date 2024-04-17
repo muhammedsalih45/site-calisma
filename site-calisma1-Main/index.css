@@ -403,18 +403,19 @@ body {
 }
 
 .gameDetails {
-  position: absolute;
+  position: fixed;
   font-family: "Inconsolata", monospace;
   min-width: 500px;
   max-width: 500px;
   left: 34%;
   top: 300px;
-  background-color: white;
   color: black;
   border-radius: 20px;
   text-align: center;
   font-size: 20px;
-  background: linear-gradient(rgb(255, 175, 175), rgb(255, 171, 255));
+  background: linear-gradient(rgb(255, 117, 117), rgb(131, 133, 255));
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Search Kısmı Başlangıç */
